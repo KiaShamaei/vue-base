@@ -1,17 +1,23 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<h1> kia is bala ! {{name}}</h1>
+<div v-text="lname"></div> 
+<div v-html="camel"></div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
+ data (){
+return {
+	name :  "shamae" ,
+	lname : "vishvas",
+	camel : "<b>kia is good learner</b>"
 }
+ }
+
+ }
 </script>
 
 <style>
